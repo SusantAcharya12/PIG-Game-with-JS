@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 66.4%;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: rgb(255, 254, 254);
+  height: 99.99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top left, #2d292e 10%, #8bcaee 100%);
+}
+
+/* LAYOUT */
+main {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(199px);
+  box-shadow: 0 4rem 6rem rgba(17, 17, 17, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+  filter: blur();
+  position: relative;
+}
+
+.players {
+  display: flex;
+  padding: 89px;
+  align-items: center;
+  transition: all 1s;
+  flex-direction: column;
+  flex: 51%;
+}
+
+/* ELEMENTS */
+.detail {
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.point {
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 7.5rem;
+  color: #c7365f;
+}
+
+.players-act {
+  background-color: rgba(8, 250, 48, 0.644);
+}
+.players-act .detail {
+  font-weight: 600;
+}
+.player-act .point {
+  font-weight: 500;
+}
+
+.players-act .present {
+  opacity: 0.9;
+}
+
+.present {
+  transition: all 0.29s;
+  opacity: 0.8;
+  padding: 1.5rem;
+  border-radius: 9px;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  width: 68%;
+  background-color: #48818b;
+}
+
+.present-label {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: rgb(10, 6, 253);
+  text-transform: uppercase;
+}
+
+.present-point {
+  font-size: 4rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.buttons {
+  cursor: pointer;
+  border: none;
+  left: 49%;
+  transform: translateX(-49%);
+  color: rgb(54, 54, 54);
+  font-weight: 500;
+  font-size: 1.9rem;
+  transition: all 0.24s;
+  text-transform: uppercase;
+  position: absolute;
+
+  background-color: rgb(238, 235, 235);
+  backdrop-filter: blur(11px);
+  background-color: rgba(236, 231, 231, 0.6);
+
+  box-shadow: 0.1rem 1.79rem 3.4rem rgba(14, 13, 13, 0.1);
+  border-radius: 49rem;
+  padding: 0.8rem 2.6rem;
+}
+
+.buttons::first-letter {
+  margin-right: 0.8rem;
+  display: inline-block;
+  font-size: 2.6rem;
+}
+
+.buttons-new {
+  top: 4.2rem;
+}
+.buttons-roll {
+  top: 39.5rem;
+}
+.buttons-hold {
+  top: 47rem;
+}
+
+.btn:active {
+  transform: translate(-49%, 2.5px);
+  box-shadow: 0.2rem 1.2rem 2.4rem rgba(20, 20, 20, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.ludo {
+  top: 16.7rem;
+  box-shadow: 0.3rem 2.2rem 5.3rem rgba(10, 10, 10, 0.2);
+  transform: translateX(-49%);
+  left: 49%;
+  height: 9rem;
+  position: absolute;
+}
+
+.player--winner {
+  background-color: #0a0a0a;
+}
+
+.player--winner .name {
+  font-weight: 300;
+  color: #d82558;
+}
+
+.hidden {
+  display: none;
+}
